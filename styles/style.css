@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+    padding: 0; /*Resetting inner padding*/
+    margin: 0; /*Resetting outer padding*/
+}
+
+body {
+    text-align:;
+    /*100 percent of the active Viewport geometry height*/
+    height: 100vh;
+    background: #F5E8C7;
+}
+
+.pageContainer {
+    height: 100vh;
+    background: whitesmoke;
+    display: grid; /*Setting the Grid system as layout system for the Children elements of the page, which is Rows by default to each element*/
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+.item{
+    font-family:'Ubuntu',sans-serif;
+}
+
+.navBar{
+    grid-column: 1 / span 12 ;
+    grid-auto-row: 12 / 1 ;
+}
+.footer{
+    grid-column: 1 / span 12 ;
+    grid-row: 12 / span 1;
+}
+.topBar{
+    grid-column: 2 / span 10;
+    grid-row: 2 / span 1
+}
+.l-sPanel{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 10;
+}
+.r-sPanel{}
+.bodyPart{}
+
+
+
